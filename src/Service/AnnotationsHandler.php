@@ -4,20 +4,18 @@ declare(strict_types=1);
 
 namespace N7\SymfonyHttpBundle\Service;
 
+use Doctrine\Common\Annotations\Reader;
 use N7\SymfonyHttpBundle\Annotations\ValueMutatorInterface;
 use N7\SymfonyValidatorsBundle\Validator\NestedObject;
 use N7\SymfonyValidatorsBundle\Validator\NestedObjects;
-use Symfony\Component\Validator\Mapping\PropertyMetadata;
-use Symfony\Component\Validator\Validator\ValidatorInterface;
-use Doctrine\Common\Annotations\AnnotationReader;
 use ReflectionClass;
 use ReflectionProperty;
 
 final class AnnotationsHandler
 {
-    private AnnotationReader $annotationReader;
+    private Reader $annotationReader;
 
-    public function __construct(AnnotationReader $annotationReader)
+    public function __construct(Reader $annotationReader)
     {
         $this->annotationReader = $annotationReader;
     }
