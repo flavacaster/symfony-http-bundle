@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\EventListener;
+namespace Flavacaster\SymfonyHttpBundle\EventListener;
 
-use N7\SymfonyHttpBundle\Interfaces\ValidationExceptionInterface;
+use Flavacaster\SymfonyHttpBundle\Interfaces\ValidationExceptionInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpKernel\Event\ExceptionEvent;
 

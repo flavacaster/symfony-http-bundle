@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Interfaces\Payload;
+namespace Flavacaster\SymfonyHttpBundle\Interfaces\Payload;
 
-use N7\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
+use Flavacaster\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
 
 interface RequestQueryParametersInterface extends RequestPayloadInterface
 {

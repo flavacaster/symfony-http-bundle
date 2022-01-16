@@ -2,13 +2,12 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Exceptions;
+namespace Flavacaster\SymfonyHttpBundle\Exceptions;
 
 use RuntimeException;
 use Symfony\Component\Validator\ConstraintViolationListInterface;
-use Throwable;
 
-final class RequestHeadersValidationFailedException extends RuntimeException implements ValidationExceptionInterface
+final class RequestHeadersValidationFailedException extends RuntimeException
 {
     private ConstraintViolationListInterface $violationList;
     private string $class;

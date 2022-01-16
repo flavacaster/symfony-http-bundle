@@ -1,6 +1,6 @@
 <?php
 
-namespace N7\SymfonyHttpBundle\Interfaces;
+namespace Flavacaster\SymfonyHttpBundle\Interfaces;
 
 use Symfony\Component\Validator\Constraint;
 

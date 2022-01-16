@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Service;
+namespace Flavacaster\SymfonyHttpBundle\Service;
 
 use N7\SymfonyValidatorsBundle\Validator\NestedObjects;
 use Symfony\Component\Validator\Mapping\PropertyMetadata;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
-use N7\SymfonyHttpBundle\Service\Casters;
+use Flavacaster\SymfonyHttpBundle\Service\Casters;
 
 final class SoftTypesCaster
 {

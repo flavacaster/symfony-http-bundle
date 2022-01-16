@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Interfaces;
+namespace Flavacaster\SymfonyHttpBundle\Interfaces;
 
 use Symfony\Component\Validator\ConstraintViolationListInterface;
 

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Service;
+namespace Flavacaster\SymfonyHttpBundle\Service;
 
 use Doctrine\Common\Annotations\Reader;
-use N7\SymfonyHttpBundle\Annotations\ValueMutatorInterface;
+use Flavacaster\SymfonyHttpBundle\Annotations\ValueMutatorInterface;
 use N7\SymfonyValidatorsBundle\Validator\NestedObject;
 use N7\SymfonyValidatorsBundle\Validator\NestedObjects;
 use ReflectionClass;

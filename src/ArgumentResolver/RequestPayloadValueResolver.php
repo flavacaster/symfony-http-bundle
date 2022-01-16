@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\ArgumentResolver;
+namespace Flavacaster\SymfonyHttpBundle\ArgumentResolver;
 
-use N7\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
-use N7\SymfonyHttpBundle\Service\RequestResolver;
+use Flavacaster\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
+use Flavacaster\SymfonyHttpBundle\Service\RequestResolver;
 use Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;

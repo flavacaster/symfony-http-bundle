@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Service\Casters;
+namespace Flavacaster\SymfonyHttpBundle\Service\Casters;
 
 final class SoftBooleanCaster implements SoftCasterInterface
 {

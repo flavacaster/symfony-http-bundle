@@ -16,7 +16,7 @@ Important note: HTTP request fields always come as strings, to validate them cor
 casted according to type annotations in request class.
 
 You can register listener, that will convert
-`N7\SymfonyHttpBundle\EventListener\RequestPayloadExceptionListener` exception to `json` response:
+`Flavacaster\SymfonyHttpBundle\EventListener\RequestPayloadExceptionListener` exception to `json` response:
 
 ```
 # (config/services.yaml)
@@ -24,7 +24,7 @@ You can register listener, that will convert
 services:
     # ...
     
-    N7\SymfonyHttpBundle\EventListener\RequestPayloadExceptionListener:
+    Flavacaster\SymfonyHttpBundle\EventListener\RequestPayloadExceptionListener:
         tags:
             - { name: kernel.event_listener, event: kernel.exception }
 ```
@@ -34,7 +34,7 @@ Example:
 Request class:
 
 ```php
-use N7\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
+use Flavacaster\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
 
 final class CreateUserRequest implements RequestPayloadInterface
 {
@@ -86,7 +86,7 @@ Response for request without parameters:
 
 ## Nested objects and array of objects
 
-Nested objects and arrays of objects are handled with `n7/symfony-validators-bundle` package.
+Nested objects and arrays of objects are handled with `Flavacaster/symfony-validators-bundle` package.
 
 Example:
 

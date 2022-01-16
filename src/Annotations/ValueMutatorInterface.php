@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Annotations;
+namespace Flavacaster\SymfonyHttpBundle\Annotations;
 
 /**
  * @Annotation

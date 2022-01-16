@@ -2,20 +2,19 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Service;
+namespace Flavacaster\SymfonyHttpBundle\Service;
 
+use Flavacaster\SymfonyHttpBundle\Exceptions\RequestPayloadValidationFailedException;
+use Flavacaster\SymfonyHttpBundle\Interfaces\Payload\RequestFormDataInterface;
+use Flavacaster\SymfonyHttpBundle\Interfaces\Payload\RequestJsonPayloadInterface;
+use Flavacaster\SymfonyHttpBundle\Interfaces\Payload\RequestQueryParametersInterface;
+use Flavacaster\SymfonyHttpBundle\Interfaces\RequestGroupAwareInterface;
+use Flavacaster\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
+use JMS\Serializer\Naming\IdenticalPropertyNamingStrategy;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
-use JMS\Serializer\Naming\IdenticalPropertyNamingStrategy;
-use N7\SymfonyHttpBundle\Exceptions\RequestPayloadValidationFailedException;
-use N7\SymfonyHttpBundle\Interfaces\Payload\RequestFormDataInterface;
-use N7\SymfonyHttpBundle\Interfaces\Payload\RequestJsonPayloadInterface;
-use N7\SymfonyHttpBundle\Interfaces\Payload\RequestQueryParametersInterface;
-use N7\SymfonyHttpBundle\Interfaces\RequestGroupAwareInterface;
-use N7\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
 use N7\SymfonyValidatorsBundle\Service\ConstrainsExtractor;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 
 final class RequestResolver
@@ -58,6 +57,7 @@ final class RequestResolver
         $payload = $this->annotationsHandler->apply($requestClass, $payload);
 
         if (in_array(RequestGroupAwareInterface::class, class_implements($requestClass), true)) {
+            /** @var RequestGroupAwareInterface $requestClass */
             $groups = array_merge(
                 $requestClass::getGroupSequence($payload),
                 $groups ?? []

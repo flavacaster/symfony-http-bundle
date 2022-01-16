@@ -2,12 +2,11 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\Exceptions;
+namespace Flavacaster\SymfonyHttpBundle\Exceptions;
 
-use N7\SymfonyHttpBundle\Interfaces\ValidationExceptionInterface;
+use Flavacaster\SymfonyHttpBundle\Interfaces\ValidationExceptionInterface;
 use RuntimeException;
 use Symfony\Component\Validator\ConstraintViolationListInterface;
-use Throwable;
 
 final class RequestPayloadValidationFailedException extends RuntimeException implements ValidationExceptionInterface
 {

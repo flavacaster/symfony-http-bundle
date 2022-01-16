@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace N7\SymfonyHttpBundle\DependencyInjection;
+namespace Flavacaster\SymfonyHttpBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-final class N7SymfonyHttpExtension extends Extension
+final class FlavacasterSymfonyHttpExtension extends Extension
 {
     public function load(array $configs, ContainerBuilder $container)
     {
