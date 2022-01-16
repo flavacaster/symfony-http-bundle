@@ -1,11 +1,11 @@
 {
-    "name": "n7/symfony-http-bundle",
+    "name": "flavacaster/symfony-http-bundle",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "Vladimir Gluhov",
-            "email": "nope7777@gmail.com"
+            "name": "Flavacaster",
+            "email": "hoaxer.yacht0r@icloud.com"
         }
     ],
     "require": {
