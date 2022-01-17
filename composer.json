@@ -13,13 +13,13 @@
         "symfony/http-foundation": "^6.0",
         "symfony/validator": "^6.0",
         "doctrine/annotations": "^1.13",
-        "n7/symfony-validators-bundle": "*",
         "jms/serializer": "^3.10",
         "ext-json": "*",
         "symfony/serializer": "^6.0",
         "symfony/http-kernel": "^6.0",
         "symfony/dependency-injection": "^6.0",
-        "symfony/config": "^6.0"
+        "symfony/config": "^6.0",
+        "flavacaster/symfony-validators-bundle": "^1.0"
     },
     "autoload": {
         "psr-4": {
