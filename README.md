@@ -135,8 +135,8 @@ final class Request implements RequestPayloadInterface
 Validatior `allowExtraFields` and `allowMissingFields` parameters can be overwritten with annotations:
 
 ```php
-use N7\SymfonyValidatorsBundle\Options\AllowExtraFields;
-use N7\SymfonyValidatorsBundle\Options\AllowMissingFields;
+use Flavacaster\SymfonyValidatorsBundle\Options\AllowExtraFields;
+use Flavacaster\SymfonyValidatorsBundle\Options\AllowMissingFields;
 
 /**
  * @AllowExtraFields

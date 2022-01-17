@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Flavacaster\SymfonyHttpBundle\Service;
 
-use N7\SymfonyValidatorsBundle\Validator\NestedObjects;
+use Flavacaster\SymfonyValidatorsBundle\Validator\NestedObjects;
 use Symfony\Component\Validator\Mapping\PropertyMetadata;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Flavacaster\SymfonyHttpBundle\Service\Casters;

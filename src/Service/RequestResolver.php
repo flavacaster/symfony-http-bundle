@@ -13,7 +13,7 @@ use Flavacaster\SymfonyHttpBundle\Interfaces\RequestPayloadInterface;
 use JMS\Serializer\Naming\IdenticalPropertyNamingStrategy;
 use JMS\Serializer\Serializer;
 use JMS\Serializer\SerializerBuilder;
-use N7\SymfonyValidatorsBundle\Service\ConstrainsExtractor;
+use Flavacaster\SymfonyValidatorsBundle\Service\ConstrainsExtractor;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 

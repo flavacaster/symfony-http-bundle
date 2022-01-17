@@ -6,8 +6,8 @@ namespace Flavacaster\SymfonyHttpBundle\Service;
 
 use Doctrine\Common\Annotations\Reader;
 use Flavacaster\SymfonyHttpBundle\Annotations\ValueMutatorInterface;
-use N7\SymfonyValidatorsBundle\Validator\NestedObject;
-use N7\SymfonyValidatorsBundle\Validator\NestedObjects;
+use Flavacaster\SymfonyValidatorsBundle\Validator\NestedObject;
+use Flavacaster\SymfonyValidatorsBundle\Validator\NestedObjects;
 use ReflectionClass;
 use ReflectionProperty;
 
