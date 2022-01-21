@@ -1,6 +1,7 @@
 {
     "name": "flavacaster/symfony-http-bundle",
     "type": "symfony-bundle",
+    "description": "symfony http request validator bundle",
     "license": "MIT",
     "authors": [
         {
